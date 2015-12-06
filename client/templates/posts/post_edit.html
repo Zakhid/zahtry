@@ -36,8 +36,10 @@
           <input name="level" id="level" type="text" value="{{level}}" placeholder="уровень" class="form-control"/>
       </div>
     </div>
+    {{#if ownPost}}
     <input type="submit" value="Submit" class="btn btn-primary submit"/>
     <hr/>
     <a class="btn btn-danger delete" href="#">Удалить пост</a>
+    {{/if}}
   </form>
 </template>
