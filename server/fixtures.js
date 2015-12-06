@@ -3,8 +3,8 @@ if (Posts.find().count() === 0) {
     title: 'МЧС',
     kind: '1',
     descr: 'Штаб',
-    longtitude: '42.8785403',
-    latitude: '74.6242235',
+    longtitude: '74.6242235',
+    latitude: '42.8785403',
     level: '3'
   });
   
@@ -12,8 +12,8 @@ if (Posts.find().count() === 0) {
     title: 'Главпочтамт',
     kind: '2',
     descr: 'Связь',
-    longtitude: '42.8746711',
-    latitude: '74.6126176',
+    longtitude: '74.6126176',
+    latitude: '42.8746711',
     level: '2'
   });
   

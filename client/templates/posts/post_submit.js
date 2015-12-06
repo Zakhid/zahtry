@@ -3,7 +3,11 @@ Template.postSubmit.events({
     e.preventDefault();
     
     var post = {
-      url: $(e.target).find('[name=url]').val(),
+      level: $(e.target).find('[name=level]').val(),
+      latitude: $(e.target).find('[name=latitude]').val(),
+      longtitude: $(e.target).find('[name=longtitude]').val(),
+      descr: $(e.target).find('[name=descr]').val(),
+      kind: $(e.target).find('[name=kind]').val(),
       title: $(e.target).find('[name=title]').val()
     };
     

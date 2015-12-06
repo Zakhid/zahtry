@@ -1,30 +1,33 @@
 <template name="postEdit">
   <form class="main form page">
     <div class="form-group">
-      <label class="control-label" for="title">Заголовок</label>
+      <label class="control-label" for="title">Наименование поста</label>
       <div class="controls">
           <input name="title" id="title" type="text" value="{{title}}" placeholder="Название поста" class="form-control"/>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label" for="url">Описание</label>
+      <label class="control-label" for="descr">Описание</label>
       <div class="controls">
           <input name="descr" id="descr" type="text" value="{{descr}}" placeholder="описание" class="form-control"/>
       </div>
+    </div>
     <div class="form-group">
-      <label class="control-label" for="url">Долгота</label>
+      <label class="control-label" for="longtitude">Долгота</label>
       <div class="controls">
-          <input name="longtitude" id="longtitude" type="text" value="{{descr}}" placeholder="долгота" class="form-control"/>
+          <input name="longtitude" id="longtitude" type="text" value="{{longtitude}}" placeholder="долгота" class="form-control"/>
       </div>
-    </div class="form-group">
-      <label class="control-label" for="url">Широта</label>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="latitude">Широта</label>
       <div class="controls">
-          <input name="latitude" id="latitude" type="text" value="{{descr}}" placeholder="широта" class="form-control"/>
+          <input name="latitude" id="latitude" type="text" value="{{latitude}}" placeholder="широта" class="form-control"/>
       </div>
-    </div class="form-group">
-      <label class="control-label" for="url">Уровень</label>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="level">Уровень</label>
       <div class="controls">
-          <input name="level" id="level" type="text" value="{{descr}}" placeholder="уровень" class="form-control"/>
+          <input name="level" id="level" type="text" value="{{level}}" placeholder="уровень" class="form-control"/>
       </div>
     </div>
     <input type="submit" value="Submit" class="btn btn-primary submit"/>

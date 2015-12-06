@@ -5,8 +5,12 @@ Template.postEdit.events({
     var currentPostId = this._id;
     
     var postProperties = {
-      url: $(e.target).find('[name=url]').val(),
-      title: $(e.target).find('[name=title]').val()
+      title: $(e.target).find('[name=title]').val(),
+      kind: $(e.target).find('[name=kind]').val(),
+      descr: $(e.target).find('[name=descr]').val(),
+      longtitude: $(e.target).find('[name=longtitude]').val(),
+      latitude: $(e.target).find('[name=latitude]').val(),
+      level: $(e.target).find('[name=level]').val()
     }
     
     Posts.update(currentPostId, {$set: postProperties}, function(error) {
