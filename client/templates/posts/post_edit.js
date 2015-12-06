@@ -1,4 +1,4 @@
-Template.postEdit.events({
+﻿Template.postEdit.events({
   'submit form': function(e) {
     e.preventDefault();
     
