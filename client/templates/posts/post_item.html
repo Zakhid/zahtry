@@ -3,7 +3,7 @@
     <div class="post-content">
       <h3>{{title}}, {{descr}}, уровень {{level}}</h3>
       <p>
-        ввел {{author}}
+        {{#if author}}ввел {{author}} {{/if}}
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Изменить</a>{{/if}}
       </p>
     </div>
