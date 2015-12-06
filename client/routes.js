@@ -4,7 +4,7 @@ Router.configure({
 });
 
 Router.route('/', {name: 'home', controller: 'MainController'});
-Router.route('/tmp', {name: 'tmp1', controller: 'MapController'});
+Router.route('/map', {name: 'map', controller: 'MapController'});
 
 MainController = RouteController.extend({
   action: function() {
@@ -17,10 +17,13 @@ MainController = RouteController.extend({
 });
 MapController = RouteController.extend({
   action: function() {
-  	this.render('loading', {
+  	this.render('map', {
 	    data: function () {
 	      return { posts: ['post red', 'post blue'] }
 	    }
   	});
   }
 });
+
+
+Router.onBeforeAction('loading');

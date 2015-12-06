@@ -24,3 +24,6 @@ check
 ecmascript
 mizzao:bootstrap-3
 iron:router
+sacha:spin
+mrt:accounts-ui-bootstrap-dropdown
+accounts-password
