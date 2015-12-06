@@ -1,19 +1,34 @@
 <template name="postEdit">
   <form class="main form page">
     <div class="form-group">
-      <label class="control-label" for="url">URL</label>
+      <label class="control-label" for="title">Заголовок</label>
       <div class="controls">
-          <input name="url" id="url" type="text" value="{{url}}" placeholder="Your URL" class="form-control"/>
+          <input name="title" id="title" type="text" value="{{title}}" placeholder="Название поста" class="form-control"/>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label" for="title">Title</label>
+      <label class="control-label" for="url">Описание</label>
       <div class="controls">
-          <input name="title" id="title" type="text" value="{{title}}" placeholder="Name your post" class="form-control"/>
+          <input name="descr" id="descr" type="text" value="{{descr}}" placeholder="описание" class="form-control"/>
+      </div>
+    <div class="form-group">
+      <label class="control-label" for="url">Долгота</label>
+      <div class="controls">
+          <input name="longtitude" id="longtitude" type="text" value="{{descr}}" placeholder="долгота" class="form-control"/>
+      </div>
+    </div class="form-group">
+      <label class="control-label" for="url">Широта</label>
+      <div class="controls">
+          <input name="latitude" id="latitude" type="text" value="{{descr}}" placeholder="широта" class="form-control"/>
+      </div>
+    </div class="form-group">
+      <label class="control-label" for="url">Уровень</label>
+      <div class="controls">
+          <input name="level" id="level" type="text" value="{{descr}}" placeholder="уровень" class="form-control"/>
       </div>
     </div>
     <input type="submit" value="Submit" class="btn btn-primary submit"/>
     <hr/>
-    <a class="btn btn-danger delete" href="#">Delete post</a>
+    <a class="btn btn-danger delete" href="#">Удалить пост</a>
   </form>
 </template>
